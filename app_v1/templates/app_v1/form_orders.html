@@ -1,0 +1,41 @@
+{% extends 'app_v1/base_template.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <center>
+        <legend>Create Order</legend>
+        <div class="container">
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="custumer_name">Name</label>  
+                <div class="col-md-4">
+                    <input id="custumer_name" name="customer_name" type="text" placeholder="Name" class="form-control input-md">
+                    
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="customer_email">Email</label>  
+                <div class="col-md-4">
+                    <input id="customer_email" name="customer_email" type="text" placeholder="Email" class="form-control input-md">
+                    
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="customer_mobile">Cel</label>  
+                <div class="col-md-4">
+                    <input id="customer_mobile" name="customer_mobile" type="text" placeholder="Contact Number" class="form-control input-md">
+                    
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="singlebutton"></label>
+                <div class="col-md-4">
+                    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </center>
+    </form>
+{% endblock %}  

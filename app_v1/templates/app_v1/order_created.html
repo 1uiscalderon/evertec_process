@@ -1,0 +1,14 @@
+{% extends 'app_v1/base_template.html' %}
+{% block body %}
+    <div id="create-message" class="alert alert-secondary" role="alert">
+        <h1>ORDER CREATED SUCESSFULLY</h1>
+        <h1>Order Id: {{ order_det.id}} </h1>
+        <h2>Customer Name: {{ order_det.customer_name }}</h2>
+        <h2>Customer Email: {{order_det.customer_email}}</h2>
+        <a href="{% url 'store:list_orders' %}"><button class="btn btn-outline-primary">
+            See Orders</button></a>
+            <a href="{% url 'store:order_detail' order_det.id %}"><button class="btn btn-outline-primary">
+                See Order Now</button></a>
+            </div>
+{% endblock %}   
+                

@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+}
+#create-message{
+    margin: 0% 10% 0% 10%;
+    padding: 10%;
+}
+#create-message button {
+    margin-left: 30%;
+    margin-top: 3%;
+    width: 200px;
+    height: 70px;
+}
+.buttons-zone {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

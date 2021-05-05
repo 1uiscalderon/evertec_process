@@ -1,0 +1,23 @@
+{% extends 'app_v1/base_template.html' %}
+{% block body %}
+<table class="table table-secondary">
+    <thead>
+      <tr>
+        <th scope="col">LINK</th>
+        <th scope="col">ID</th>
+        <th scope="col">NAME</th>
+        <th scope="col">EMAIL</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for order in orders_list %}
+        <tr>
+            <th><a class="item" href="{% url 'store:order_detail' order.id %}"><p>Order Link</p></a></th>
+            <th scope="row">{{ order.id}}</th>
+            <th scope="row">{{ order.customer_name}}</th>
+            <th scope="row">{{ order.customer_email}}</th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'app_v1/base_template.html' %}
+{% block body %}
+
+<center>
+    {% if searched %}
+        <h1>Your search for the Order id: {{ searched }}</h1>
+        <br/>
+        <a href="{% url 'store:order_detail' order_id.id %}"><h1>ORDER DETAILS</h1></a>
+    {% else %}
+        <h1>Not a valid Order id Try again</h1>
+    {% endif %}
+</center>
+
+{% endblock %} 
