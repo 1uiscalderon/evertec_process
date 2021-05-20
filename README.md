@@ -32,8 +32,7 @@ To install the requirements just type in your terminal:
 I used mySQL as database engine, so make sure you have installed this program and create a table
 called "api_store", you can either create this table or change this name in settings.
 
-In the .env file are stored mostly credentials such as database user, database password, LOGIN and
-TRAN_KEY, please have that in mind.
+In the .env file are stored mostly credentials such as database user, database password.
 
 After creating a virtual env and installing django , run the program command python3 manage.py runserver
 
@@ -54,6 +53,3 @@ Once the form is done, by clicking submit a new window will show the ordir ID al
 Lastly there is a search field to introduce a valid Order id, if it is a valid id, it will redirect the user
 to the order details, otherwise will show error.
 
-## Bugs
-
-Currently this app is not redirecting to placetopay to validate the payment.
