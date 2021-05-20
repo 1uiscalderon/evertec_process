@@ -1,4 +1,4 @@
-# Evertec
+# StoreApp
 
 ## Description
 
