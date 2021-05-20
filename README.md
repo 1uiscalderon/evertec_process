@@ -21,7 +21,7 @@
 
 You can clone this repository and install all the requierements
 
-    git clone https://github.com/1uiscalderon/evertec_process.git
+    git clone https://github.com/1uiscalderon/storeapp.git
 
 ## Getting started
 
